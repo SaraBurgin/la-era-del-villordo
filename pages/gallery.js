@@ -1,14 +1,15 @@
+import Navigation from '../components/NavigationBar'
 import Layout from '../components/Layout'
-import Container from 'react-bootstrap/Container'
+import Footer from '../components/Footer'
 
 export default function Gallery() {
   return (
     <>
+    <Navigation />
     <Layout>
-      <Container>
         <p>This is where the gallery will be!</p>
-      </Container>
     </Layout>
+    <Footer />
     </>
   )
 }

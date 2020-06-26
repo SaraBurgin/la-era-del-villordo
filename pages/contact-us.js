@@ -1,14 +1,15 @@
 import Layout from '../components/Layout'
-import Container from 'react-bootstrap/Container'
+import Navigation from '../components/NavigationBar'
+import Footer from '../components/Footer'
 
 export default function ContactUs() {
   return (
     <>
+    <Navigation />
     <Layout>
-      <Container>
         <p>Please contact us!</p>
-      </Container>
     </Layout>
+    <Footer />
     </>
   )
 }
