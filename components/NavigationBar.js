@@ -1,24 +1,10 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import styled from 'styled-components'
 
-const Styles = styled.div`
-  .navbar-color {
-    background-color: #3fabc9;
-  }
-  .navbar-brand, .navbar-nav, .nav-link {
-    color: #ffffff;
-
-    &:hover {
-      color: #ffffff;
-    }
-  }
-`
 
 const NavigationBar = () => {
   return (
     <>
-    <Styles className="navbar-color">
       <Navbar expand="lg" bg="light" variant="light">
           <Navbar.Brand href="/">
             <img src="/images/logo.png" width="55" className="d-inline-block align-top" alt="La era logo"/>
@@ -34,7 +20,6 @@ const NavigationBar = () => {
             </Nav>
           </Navbar.Collapse>
       </Navbar>
-    </Styles>
   </>
   )
   };

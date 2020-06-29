@@ -2,11 +2,9 @@ import Container from 'react-bootstrap/Container'
 
 const Layout = (props) => (
     <>
-    <div className="general-wrapper">
-      <Container>
+      <Container fluid>
         {props.children}
       </Container>
-    </div>
   </>
   );
 
