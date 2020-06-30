@@ -1,12 +1,23 @@
 /* NAVIGATION BAR */
 .bg-light {
-  background-color: #e1d9c7;
+  background-color: #e1d9c7 !important;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+/* MAIN */
+
 /* LAYOUT */
 
-/*FOOTER*/
-
-/* LAYOUT */
+/*JUMBOTRON*/
+.jumbo {
+  background: url('/images/la-era-background.jpg');
+  background-size: cover;
+  height: 450px;
+  background-position: center;
+  z-index: -2;
+  margin-bottom: 0;
+}
 
 /*FOOTER*/
 
