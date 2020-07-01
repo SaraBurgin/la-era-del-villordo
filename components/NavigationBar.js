@@ -5,9 +5,10 @@ import Nav from 'react-bootstrap/Nav'
 const NavigationBar = () => {
   return (
     <>
-      <Navbar expand="lg" bg="light" variant="light">
+    <div className="navnavbar">
+      <Navbar expand="md" bg="light" variant="light" fixed="top">
           <Navbar.Brand href="/">
-            <img src="/images/logo.png" width="55" className="d-inline-block align-top" alt="La era logo"/>
+            <img src="/images/logo.png" width="40" className="d-inline-block align-top" alt="La era logo"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -20,6 +21,7 @@ const NavigationBar = () => {
             </Nav>
           </Navbar.Collapse>
       </Navbar>
+    </div>
   </>
   )
   };

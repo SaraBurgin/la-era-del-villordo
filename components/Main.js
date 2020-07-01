@@ -1,50 +1,25 @@
-import styled from 'styled-components'
-
-const MainContainer = styled.div`
-  display: grid;
-  padding: 10px;
-  width: 100vw;
-  height: 400px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 5px;
-  background-color: #e1d9c7;
-  color: #ffffff;
-  align-items: center; 
-  justify-items: center;
-
-  img {
-    grid-column: 0 / 1;
-    grid-row: 1 / 2;
-  }
-  .break-one{
-    grid-column: 1 / 4;
-    grid-row: 1 / 1;
-    border: 5px solid #ffffff;
-  }
-  h1 {
-    grid-column: 2 / 4;
-    grid-row: 1 / 1;
-  }
-  
-  p {
-    grid-column: 2 / 4;
-  }
-  .break-two{
-    border: 5px solid #ffffff;
-  }
-  `
-
+import Button from 'react-bootstrap/Button'
 
 const Main = () => (
     <>
-    <MainContainer className="main-container">
-          <img width="300px" src="/images/full_logo.png" alt="la era logo" class/>
-          <br className="break-one"/>
-            <h1>YOUR HOME AWAY FROM HOME</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-          <br className="break-two"/>
-    </MainContainer>
+    <div className="first-container">
+          <img src="/images/full_logo.png" alt="la era logo" className="era-logo"/>
+            <h1 className="home-header">YOUR HOME AWAY FROM HOME</h1>
+            <p className="home-paragraph">La Era del Villordo is a one storey villa set on a very quiet lane that boasts the most wonderful sea views. It has been newly renovated this year throughout and is modern and fresh. This gorgeous villa is available for holiday rentals throughout the year. It is just 5 mins walk to the shops and restaurants of Benalmadena Pueblo, which is a very desirable little town which has won awards for its quaintness, and 20 mins walk down to the beach.
+            Our Villa is registered with the tax authorities and the Andalucian Tourism board. </p>
+          <hr className="break-one"/>
+    </div>
+    <div className="second-container">
+        <img src="/images/la-era-piscina.jpg" alt="swimming-pool-pic" className="la-era-piscina"/>
+        <img src="/images/background-design.png" alt="light-blue-background" className="blue-background"/>
+        <p className="swimming-pool-text">THE SWIMMING POOL.</p>
+        <Button className="swimming-pool-info-btn"variant="outline-primary">INFO</Button>
+    </div>
+    <div className="third-container">
+      <p className="relaxation-text">THE RELAXATION.</p>
+      <img src="/images/barbacoa.jpg" className="bbq-img" alt="barbaque image"/>
+      <Button className="relaxation-info-btn" variant="outline-primary">INFO</Button>
+    </div>
     </>
   );
 

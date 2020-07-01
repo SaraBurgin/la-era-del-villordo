@@ -1,9 +1,9 @@
 import Jumbo2 from '../components/Jumbo2'
-import Layout from '../components/Layout'
 import Navigation from '../components/NavigationBar'
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import Main from '../components/Main'
+import ControlledCarousel from '../components/ControlledCarousel'
 
 export default function Index() {
   return (
@@ -20,9 +20,7 @@ export default function Index() {
     <Navigation />
     <Jumbo2 />
     <Main />
-    <Layout>
-      
-    </Layout>
+    <ControlledCarousel />
     <Footer />
     </>
    )
