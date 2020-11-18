@@ -1,5 +1,5 @@
 import Jumbo2 from '../components/Jumbo2'
-import Navigation from '../components/NavigationBar'
+import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import Main from '../components/Main'
@@ -17,7 +17,7 @@ export default function Index() {
       crossOrigin="anonymous"
     />
     </Head>
-    <Navigation />
+    <NavigationBar />
     <Jumbo2 />
     <Main />
     <ControlledCarousel />

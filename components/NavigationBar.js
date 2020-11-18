@@ -1,12 +1,12 @@
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 
 const NavigationBar = () => {
   return (
     <>
     <div className="navnavbar">
-      <Navbar expand="md" bg="light" variant="light" fixed="top">
+      <Navbar expand="md" bg="light" variant="light" fixed="top" >
           <Navbar.Brand href="/">
             <img src="/images/logo.png" width="40" className="d-inline-block align-top" alt="La era logo"/>
           </Navbar.Brand>
@@ -22,6 +22,7 @@ const NavigationBar = () => {
           </Navbar.Collapse>
       </Navbar>
     </div>
+    <hr />
   </>
   )
   };

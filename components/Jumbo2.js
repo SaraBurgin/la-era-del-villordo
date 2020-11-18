@@ -1,11 +1,9 @@
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
-
 
 const Jumbo2 = () => (
     <>
-      <Jumbotron fluid className="jumbo">
-      </Jumbotron>
+        <div className="jumbo">
+          <img alt="la-era-del-villordo" src="/images/la-era-pool.jpg" className="first-bg-img"/>
+        </div>
     </>
   );
 

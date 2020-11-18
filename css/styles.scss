@@ -1,3 +1,5 @@
+@import './variables';
+
 /* LAYOUT */
 .layout-container {
   margin-top: 80px;
@@ -7,19 +9,25 @@
   margin-bottom: 65px;
 }
 .bg-light {
-  background-color: #f4f4f4 !important;
+  background-color: $primarySand !important;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #3fabc9;
+  color: $primaryBlue;
 }
+
 /*JUMBOTRON*/
 .jumbo {
-  background: url('/images/la-era-background.jpg');
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/la-era-bg.png);
   height: 400px;
-  background-position: center;
-  z-index: -2;
-  margin-bottom: 0;
+}
+.first-bg-img {
+  background-size: 80% 400px;
+  background-size: cover;
+  border-radius: 3px;
+  
 }
 /* MAIN - FIRST CONTAINER*/
 .first-container {
@@ -31,7 +39,7 @@
   grid-template-columns: 1fr 0.2fr 6fr 1fr;
   grid-template-rows: 3.5fr 1fr 3fr;
   grid-gap: 5px;
-  background-color: #e1d9c7;
+  background-color: $primarySand;
   color: #ffffff;
 }
 .era-logo {
@@ -115,7 +123,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: #e1d9c7;
+  background-color: $primarySand;
   height: 450px;
 }
 .relaxation-text {
@@ -169,7 +177,7 @@
 }
 
 .carousel-first {
-  border: 5px solid #e1d9c7;
+  border: 5px solid $primarySand;
   width: 700px;
 }
 
@@ -249,6 +257,22 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
   }
+}
+/* INFORMATION PAGE*/
+.benalmadena-pic {
+  width: 300px;
+}
+
+.malaga-pic {
+  width: 300px;
+}
+
+.beaches-pic {
+  width: 300px;
+}
+
+.sanjuan-pic {
+  width: 300px;
 }
 
 /*CONTACT US PAGE*/

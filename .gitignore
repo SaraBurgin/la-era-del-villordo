@@ -8,9 +8,12 @@
 # testing
 /coverage
 
-# next.js
+# next.js build output
 /.next/
 /out/
+
+# Dependency directories
+/node_modules/
 
 # production
 /build
