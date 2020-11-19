@@ -1,3 +1,5 @@
+
+import Layout from '../components/layout';
 import Jumbo2 from '../components/Jumbo2'
 import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
@@ -17,11 +19,13 @@ export default function Index() {
       crossOrigin="anonymous"
     />
     </Head>
+    <Layout>
     <NavigationBar />
     <Jumbo2 />
     <Main />
     <ControlledCarousel />
     <Footer />
+    </Layout>
     </>
    )
 }

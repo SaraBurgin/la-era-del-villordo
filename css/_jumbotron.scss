@@ -1,0 +1,32 @@
+/*JUMBOTRON*/
+.jumbo {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+}
+
+.coral-left {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: center;
+}
+
+.pool-bg-img {
+  border: 3px solid white;
+  padding: 7px;
+  border-radius: 4px;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  // margin-top: 50px;
+  align-self: center;
+}
+
+.coral-right {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: right;
+  align-self: center;
+}

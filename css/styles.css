@@ -1,11 +1,5 @@
 /* COLOR VARIABLES */
-/* LAYOUT */
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-.layout-container {
-  margin-top: 80px;
-}
-
-/* NAVIGATION BAR */
 header {
   background: #e1d9c7 !important;
 }
@@ -191,24 +185,52 @@ header {
 
 /*JUMBOTRON*/
 .jumbo {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: url(/images/la-era-bg.png);
-  height: 400px;
+  margin-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
 }
 
-.first-bg-img {
-  background-size: 80% 400px;
-  background-size: cover;
+.coral-left {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pool-bg-img {
+  border: 3px solid white;
+  padding: 7px;
   border-radius: 4px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.coral-right {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* MAIN - FIRST CONTAINER*/
@@ -453,6 +475,33 @@ header {
   width: 700px;
 }
 
+/*CONTACT US PAGE*/
+.contactus-grid {
+  margin-top: 100px;
+}
+
+.mb-4 {
+  font-size: 35px;
+  color: #3fabc9;
+}
+
+.btn-outline-info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.contactUs {
+  border: 3px solid #3fabc9;
+  border-radius: 5px;
+  width: 300px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 80px;
+  margin-top: 90px;
+}
+
 /*FOOTER*/
 section {
   padding: 20px 0;
@@ -556,30 +605,8 @@ section .section-title {
   width: 300px;
 }
 
-/*CONTACT US PAGE*/
-.contactus-grid {
-  margin-top: 100px;
-}
-
-.mb-4 {
-  font-size: 35px;
-  color: #3fabc9;
-}
-
-.btn-outline-info {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 150px;
-}
-
-.contactUs {
-  border: 3px solid #3fabc9;
-  border-radius: 5px;
-  width: 300px;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: 80px;
-  margin-top: 90px;
+/* LAYOUT */
+.layout-container {
+  background-color: #e1d9c7;
 }
 /*# sourceMappingURL=styles.css.map */

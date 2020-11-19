@@ -1,0 +1,25 @@
+/* CAROUSEL */
+.carousel-container {
+  display: grid;
+  grid-template-columns: 2fr 7fr 2fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-left: 0;
+}
+.background-left-side {
+  width: 370px;
+  height: 470px;
+  object-fit: cover;
+}
+
+.background-right-side {
+  width: 370px;
+  height: 470px;
+  object-fit: cover;
+}
+
+.carousel-first {
+  border: 5px solid $primarySand;
+  width: 700px;
+}
