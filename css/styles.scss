@@ -6,9 +6,12 @@
 @import './contact';
 @import './footer';
 
+/* FONTS */ 
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
 
 /* LAYOUT */ 
-
 .layout-container {
   background-color: $primarySand;
 }
