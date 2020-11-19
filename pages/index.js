@@ -1,5 +1,5 @@
 
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Jumbo2 from '../components/Jumbo2'
 import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
