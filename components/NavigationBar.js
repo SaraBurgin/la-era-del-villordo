@@ -55,7 +55,6 @@ const NavigationBar = () => {
       </nav>
     </div>
   </header>
-
   </>
   )
   };

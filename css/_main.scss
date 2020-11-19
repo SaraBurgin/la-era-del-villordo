@@ -1,6 +1,7 @@
 /* MAIN - FIRST CONTAINER*/
 .first-container {
   display: grid;
+  margin-bottom:65px;
   width: 100vw;
   height: 350px;
   padding: 20px;
@@ -16,14 +17,15 @@
   grid-column: 0 / 1;
   grid-row: 1 / 4;
   justify-self: center;
-  align-self: center;
+  align-self: top;
 }
 
 .home-header {
+  font-family: 'Im Fell English';
   grid-column: 3 / 4;
   grid-row: 1 / 1;
   font-size: 50px;
-  align-self: center;
+  align-self: top;
   justify-self: center;
 }
 
@@ -31,14 +33,14 @@
   grid-column: 3 / 4;
   grid-row: 2 / 3;
   font-size: 20px;
-  align-self: center;
+  align-self: top;
   justify-self: center;
 }
 
 .break-one {
   width: 600px;
   justify-self: center;
-  align-self: center;
+  align-self: top;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   border: 2.5px solid white;

@@ -1,6 +1,7 @@
 /*JUMBOTRON*/
 .jumbo {
-  margin-top: 65px;
+  margin-top: 40px;
+  margin-bottom: -65px;
   display: grid;
   width: 100vw;
   height: 800px;
@@ -28,7 +29,7 @@
 
     .la-era-txt {
       color: white;
-      font-family: 'Im Fell English';
+      font-family: $titleFont;
       font-size: 100px;
       grid-column: 1;
       grid-row: 1 / 2;
@@ -37,7 +38,7 @@
     }
     .del-txt {
       color: $primaryBlue;
-      font-family: 'Mr Dafoe';
+      font-family: $subFont;
       font-size: 55px;
       grid-column: 1;
       grid-row: 2/3;
