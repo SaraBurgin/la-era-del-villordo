@@ -5,7 +5,6 @@
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 1fr 1.5fr;
   width: 100vw;
-}
 
 .coral-left {
   grid-column: 1 / 2;
@@ -71,4 +70,76 @@
   justify-self: right;
   align-self: center;
   height: 790px;
+}
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 990px) {
+  .jumbo {
+    .coral-left {
+      height: 500px;
+    }
+    .container-txt {
+      .la-era-txt {
+        font-size: 75px;
+        margin-bottom: -25px;
+      }
+      .del-txt {
+        font-size: 33px;
+      }
+      .villordo-txt {
+        font-size: 33px;
+      }
+  }
+  .pool-bg-img {
+    width: 750px;
+  }
+  .coral-right {
+    height: 500px;
+  }
+  }
+}
+
+@media (max-width: 790px) {
+  .jumbo {
+    .container-txt {
+      .la-era-txt {
+        font-size: 55px;
+        margin-bottom: -10px;
+      }
+      .del-txt {
+        font-size: 30px;
+        margin-bottom: 3px;
+      }
+      .villordo-txt {
+        font-size: 30px;
+      }
+  }
+    .pool-bg-img {
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .jumbo {
+    .coral-left {
+      height: 350px;
+    }
+    .pool-bg-img {
+      width: 500px;
+    }
+    .coral-right {
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .jumbo {
+    .pool-bg-img {
+      width: 400px;
+    }
+  }
 }

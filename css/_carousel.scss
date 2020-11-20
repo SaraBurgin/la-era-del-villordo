@@ -1,25 +1,27 @@
 /* CAROUSEL */
 .carousel-container {
   display: grid;
-  grid-template-columns: 2fr 7fr 2fr;
-  grid-template-rows: 1fr;
+  background-image: url("/images/background-design.png");
+  height: 470px;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
   justify-items: center;
   align-items: center;
-  margin-left: 0;
-}
-.background-left-side {
-  width: 370px;
-  height: 470px;
-  object-fit: cover;
-}
-
-.background-right-side {
-  width: 370px;
-  height: 470px;
-  object-fit: cover;
+  img {
+    object-fit: cover;
+    height: 470px;
+  }
 }
 
 .carousel-first {
   border: 5px solid $primarySand;
   width: 700px;
+  height: 470px;
+}
+
+@media (max-width: 990px) {
+  .carousel-first {
+    width: 400px;
+    height: 250px;
+}
 }

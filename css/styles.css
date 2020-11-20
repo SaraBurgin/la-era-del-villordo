@@ -198,7 +198,7 @@ header {
   width: 100vw;
 }
 
-.coral-left {
+.jumbo .coral-left {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -213,7 +213,7 @@ header {
   height: 790px;
 }
 
-.container-txt {
+.jumbo .container-txt {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -233,7 +233,7 @@ header {
           justify-content: center;
 }
 
-.container-txt .la-era-txt {
+.jumbo .container-txt .la-era-txt {
   color: white;
   font-family: "IM Fell English";
   font-size: 100px;
@@ -247,7 +247,7 @@ header {
   margin-bottom: -45px;
 }
 
-.container-txt .del-txt {
+.jumbo .container-txt .del-txt {
   color: #3fabc9;
   font-family: "Mr Dafoe";
   font-size: 55px;
@@ -262,7 +262,7 @@ header {
   z-index: 1;
 }
 
-.container-txt .villordo-txt {
+.jumbo .container-txt .villordo-txt {
   color: #3fabc9;
   font-family: 'Mr Dafoe';
   font-size: 55px;
@@ -277,7 +277,7 @@ header {
   z-index: 1;
 }
 
-.pool-bg-img {
+.jumbo .pool-bg-img {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -295,7 +295,7 @@ header {
   z-index: 1;
 }
 
-.coral-right {
+.jumbo .coral-right {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
@@ -308,6 +308,64 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   height: 790px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 990px) {
+  .jumbo .coral-left {
+    height: 500px;
+  }
+  .jumbo .container-txt .la-era-txt {
+    font-size: 75px;
+    margin-bottom: -25px;
+  }
+  .jumbo .container-txt .del-txt {
+    font-size: 33px;
+  }
+  .jumbo .container-txt .villordo-txt {
+    font-size: 33px;
+  }
+  .jumbo .pool-bg-img {
+    width: 750px;
+  }
+  .jumbo .coral-right {
+    height: 500px;
+  }
+}
+
+@media (max-width: 790px) {
+  .jumbo .container-txt .la-era-txt {
+    font-size: 55px;
+    margin-bottom: -10px;
+  }
+  .jumbo .container-txt .del-txt {
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+  .jumbo .container-txt .villordo-txt {
+    font-size: 30px;
+  }
+  .jumbo .pool-bg-img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 620px) {
+  .jumbo .coral-left {
+    height: 350px;
+  }
+  .jumbo .pool-bg-img {
+    width: 500px;
+  }
+  .jumbo .coral-right {
+    height: 350px;
+  }
+}
+
+@media (max-width: 510px) {
+  .jumbo .pool-bg-img {
+    width: 400px;
+  }
 }
 
 /* MAIN - FIRST CONTAINER*/
@@ -450,7 +508,7 @@ header {
   height: 450px;
 }
 
-.relaxation-text {
+.third-container .relaxation-text {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -467,7 +525,7 @@ header {
   font-family: "IM Fell English";
 }
 
-.relaxation-info-btn {
+.third-container .relaxation-info-btn {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -485,7 +543,7 @@ header {
   border: 2px solid #ffffff;
 }
 
-.bbq-img {
+.third-container .bbq-img {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -500,38 +558,76 @@ header {
      object-position: 60% 25;
 }
 
+/* MQ SECOND CONTAINER*/
+@media (max-width: 990px) {
+  .second-container {
+    -ms-grid-rows: 50px 50px;
+        grid-template-rows: 50px 50px;
+  }
+  .second-container .img-la-era-pool {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 270px;
+    height: 100px;
+  }
+  .second-container .blue-bg {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .second-container .blue-bg .swimming-pool-header {
+    font-size: 20px;
+  }
+  .second-container .blue-bg .swimming-pool-info-btn {
+    font-size: 7px;
+  }
+}
+
+/* MQ THIRD CONTAINER */
+.third-container {
+  height: 200px;
+}
+
+.third-container .relaxation-text {
+  font-size: 20px;
+}
+
+.third-container .relaxation-info-btn {
+  font-size: 7px;
+}
+
 /* CAROUSEL */
 .carousel-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 7fr 2fr;
-      grid-template-columns: 2fr 7fr 2fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  background-image: url("/images/background-design.png");
+  height: 470px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 0;
 }
 
-.background-left-side {
-  width: 370px;
-  height: 470px;
+.carousel-container img {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.background-right-side {
-  width: 370px;
   height: 470px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .carousel-first {
   border: 5px solid #e1d9c7;
   width: 700px;
+  height: 470px;
+}
+
+@media (max-width: 990px) {
+  .carousel-first {
+    width: 400px;
+    height: 250px;
+  }
 }
 
 /*CONTACT US PAGE*/
