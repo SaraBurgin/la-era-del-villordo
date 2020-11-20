@@ -354,6 +354,9 @@ header {
   .jumbo .coral-left {
     height: 350px;
   }
+  .jumbo .container-txt .la-era-txt {
+    font-size: 75px;
+  }
   .jumbo .pool-bg-img {
     width: 500px;
   }
@@ -363,8 +366,17 @@ header {
 }
 
 @media (max-width: 510px) {
+  .jumbo .coral-left {
+    height: 350px;
+  }
+  .jumbo .container-txt .la-era-txt {
+    font-size: 50px;
+  }
   .jumbo .pool-bg-img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 400px;
+    height: 250px;
   }
 }
 
@@ -443,6 +455,63 @@ header {
       align-self: top;
   border: 2.5px solid white;
   border-radius: 5px;
+}
+
+/* MQ - FIRST CONTAINER */
+@media (max-width: 550px) {
+  .first-container {
+    padding-top: 40px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 15% 5% 5% 85%;
+        grid-template-rows: 15% 5% 5% 85%;
+  }
+  .first-container .home-header {
+    font-size: 35px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .first-container .home-paragraph {
+    display: none;
+    font-size: 0px;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/ 3;
+  }
+  .first-container .break-one {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: top;
+        -ms-grid-row-align: top;
+        align-self: top;
+  }
+  .first-container .era-logo {
+    height: 200px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -webkit-box-align: bottom;
+        -ms-flex-align: bottom;
+            align-items: bottom;
+  }
 }
 
 /* MAIN - SECOND CONTAINER*/
@@ -623,10 +692,20 @@ header {
   height: 470px;
 }
 
+/* MQ CAROUSEL*/
 @media (max-width: 990px) {
   .carousel-first {
     width: 400px;
     height: 250px;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel-first {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 350px;
+    height: 100px;
   }
 }
 

@@ -127,9 +127,16 @@
     .coral-left {
       height: 350px;
     }
+    .container-txt {
+      .la-era-txt {
+        font-size: 75px;
+
+      }
+    }
     .pool-bg-img {
       width: 500px;
     }
+
     .coral-right {
       height: 350px;
     }
@@ -138,8 +145,18 @@
 
 @media (max-width: 510px) {
   .jumbo {
+    .coral-left {
+      height: 350px;
+    }
+    .container-txt {
+      .la-era-txt {
+        font-size: 50px;
+      }
+    }
     .pool-bg-img {
+      object-fit: cover;
       width: 400px;
+      height: 250px;
     }
   }
 }

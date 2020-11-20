@@ -44,6 +44,42 @@
   }
 }
 
+/* MQ - FIRST CONTAINER */
+@media(max-width: 550px) {
+  .first-container {
+    padding-top: 40px;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 5% 5% 85%;
+
+    .home-header {
+      font-size: 35px;
+      grid-column: 1;
+      grid-row: 1 / 2;
+      justify-self: center;
+      align-self: center;
+      text-align: center;
+    }
+    .home-paragraph {
+      display: none;
+      font-size: 0px;
+      grid-row: 2/ 3; 
+    }
+    .break-one {
+      grid-column: 1;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-self: top;
+    }
+    .era-logo {
+      height: 200px;
+      grid-column: 1;
+      grid-row: 4 / 5;
+      justify-self: center;
+      align-items: bottom;
+    }
+  } 
+}
+
 /* MAIN - SECOND CONTAINER*/
 .second-container {
   display: grid;
