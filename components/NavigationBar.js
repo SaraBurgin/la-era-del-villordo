@@ -22,21 +22,21 @@ const NavigationBar = () => {
           </Navbar.Collapse>
       </Navbar>
     </div> */}
-   <header class="main-header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg main-nav px-0">
-        <a class="navbar-brand" href="/">
+   <header className="main-header">
+    <div className="container">
+      <nav className="navbar navbar-expand-lg main-nav px-0">
+        <a className="navbar-brand" href="/">
 					      <img src="images/logo.png" alt="la-era-logo" />
 					    </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar icon-bar-1"></span>
-                        <span class="icon-bar icon-bar-2"></span>
-                        <span class="icon-bar icon-bar-3"></span>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="icon-bar icon-bar-1"></span>
+                        <span className="icon-bar icon-bar-2"></span>
+                        <span className="icon-bar icon-bar-3"></span>
                     </button>
-        <div class="collapse navbar-collapse" id="mainMenu">
-          <ul class="navbar-nav ml-auto text-uppercase f1">
+        <div className="collapse navbar-collapse" id="mainMenu">
+          <ul className="navbar-nav ml-auto text-uppercase f1">
             <li>
-              <a href="/" class="active active-first">HOME</a>
+              <a href="/" className="active active-first">HOME</a>
             </li>
             <li>
               <a href="/gallery">GALLERY</a>

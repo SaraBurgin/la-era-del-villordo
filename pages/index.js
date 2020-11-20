@@ -1,9 +1,7 @@
 
 import Layout from '../components/Layout';
 import Jumbo2 from '../components/Jumbo2'
-import NavigationBar from '../components/NavigationBar'
 import Head from 'next/head'
-import Footer from '../components/Footer'
 import Main from '../components/Main'
 import ControlledCarousel from '../components/ControlledCarousel'
 
@@ -22,11 +20,9 @@ export default function Index() {
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet"/>
     </Head>
     <Layout>
-    <NavigationBar />
     <Jumbo2 />
     <Main />
     <ControlledCarousel />
-    <Footer />
     </Layout>
     </>
    )

@@ -1,11 +1,8 @@
 import Layout from '../components/Layout'
-import Navigation from '../components/NavigationBar'
-import Footer from '../components/Footer'
 
 export default function Benalmadena() {
   return (
     <>
-    <Navigation />
     <Layout>
       <div>
       <p>The Nearest Village is Benalmadena pueblo, within walking distance of the house where you can chose between 20 great restaurants, tapas bars and cafes, shop for groceries and souvenirs and wander the streets appreciating the decoration and arquitecture of a village which has won awards for its beauty. There are wine bars, delis, cake and pastry cafes, ice cream and terrace bars to while away your evenings enjoying the views and people watching.</p>
@@ -19,7 +16,6 @@ export default function Benalmadena() {
       170€ per week April, May and October and 185€ per week Christmas, Easter, June, July, August and September.</p>
       </div>
     </Layout>
-    <Footer />
     </>
   )
 }

@@ -1,6 +1,5 @@
+import Layout from '../components/Layout';
 
-import Navigation from '../components/NavigationBar'
-import Footer from '../components/Footer'
 import { MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdbreact'
 import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
@@ -18,7 +17,7 @@ export default function ContactUs() {
     
   return (
     <>
-    <Navigation />
+    <Layout>
     <div className="contactus-grid">
       <MDBContainer>
         <MDBRow>
@@ -48,7 +47,7 @@ export default function ContactUs() {
         </MDBRow>
       </MDBContainer>
       </div>
-    <Footer />
+     </Layout>
     </>
   )
 }
