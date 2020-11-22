@@ -188,7 +188,7 @@ header {
 
 /*JUMBOTRON*/
 .jumbo {
-  padding-top: 85px;
+  padding-top: 55px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 60% 20%;
@@ -226,8 +226,8 @@ header {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 0.20fr 0.20fr 0.20fr;
-      grid-template-rows: 0.20fr 0.20fr 0.20fr;
+  -ms-grid-rows: 0.30fr 0.30fr 0.30fr;
+      grid-template-rows: 0.30fr 0.30fr 0.30fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -320,13 +320,17 @@ header {
     margin-bottom: -25px;
   }
   .jumbo .container-txt .del-txt {
-    font-size: 33px;
+    font-size: 40px;
+    margin-bottom: 3px;
   }
   .jumbo .container-txt .villordo-txt {
-    font-size: 33px;
+    font-size: 40px;
   }
   .jumbo .pool-bg-img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 750px;
+    height: 350px;
   }
   .jumbo .coral-right {
     height: 500px;
@@ -335,48 +339,76 @@ header {
 
 @media (max-width: 790px) {
   .jumbo .container-txt .la-era-txt {
-    font-size: 55px;
+    font-size: 70px;
     margin-bottom: -10px;
   }
   .jumbo .container-txt .del-txt {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 3px;
   }
   .jumbo .container-txt .villordo-txt {
-    font-size: 30px;
+    font-size: 40px;
   }
   .jumbo .pool-bg-img {
-    width: 600px;
-  }
-  .jumbo .coral-left {
-    height: 450px;
-  }
-  .jumbo .coral-right {
-    height: 450px;
-  }
-}
-
-@media (max-width: 620px) {
-  .jumbo .coral-left {
-    height: 350px;
-  }
-  .jumbo .container-txt .la-era-txt {
-    font-size: 55px;
-  }
-  .jumbo .pool-bg-img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 500px;
+    height: 300px;
+  }
+  .jumbo .coral-left {
+    height: 550px;
   }
   .jumbo .coral-right {
-    height: 350px;
+    height: 550px;
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 550px) {
   .jumbo .coral-left {
+    height: 550px;
+  }
+  .jumbo .pool-bg-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 450px;
     height: 300px;
   }
   .jumbo .container-txt .la-era-txt {
-    font-size: 50px;
+    font-size: 70px;
+    margin-bottom: -10px;
+  }
+  .jumbo .container-txt .del-txt {
+    font-size: 40px;
+    margin-bottom: 3px;
+  }
+  .jumbo .container-txt .villordo-txt {
+    font-size: 40px;
+  }
+  .jumbo .coral-right {
+    height: 550px;
+  }
+}
+
+@media (max-width: 450px) {
+  .jumbo {
+    -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    -ms-grid-rows: 1fr 1.7fr;
+        grid-template-rows: 1fr 1.7fr;
+  }
+  .jumbo .coral-left {
+    height: 350px;
+  }
+  .jumbo .container-txt .la-era-txt {
+    font-size: 60px;
+    margin-bottom: -10px;
+  }
+  .jumbo .container-txt .del-txt {
+    font-size: 38px;
+    margin-bottom: 3px;
+  }
+  .jumbo .container-txt .villordo-txt {
+    font-size: 38px;
   }
   .jumbo .pool-bg-img {
     -o-object-fit: cover;
@@ -385,94 +417,94 @@ header {
     height: 300px;
   }
   .jumbo .coral-right {
-    height: 300px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .jumbo {
+    margin-bottom: -10px;
+  }
+  .jumbo .coral-left {
+    height: 310px;
+  }
+  .jumbo .container-txt .la-era-txt {
+    font-size: 45px;
+    margin-bottom: -10px;
+  }
+  .jumbo .container-txt .del-txt {
+    font-size: 28px;
+    margin-bottom: 3px;
+  }
+  .jumbo .container-txt .villordo-txt {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .jumbo .pool-bg-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 300px;
+    height: 250px;
+  }
+  .jumbo .coral-right {
+    height: 310px;
   }
 }
 
 /* MAIN - FIRST CONTAINER*/
 .first-container {
-  margin-bottom: 65px;
+  padding: 20px;
   display: -ms-grid;
   display: grid;
   width: 100vw;
-  padding: 20px;
-  height: 100vh;
+  height: 50vh;
   -ms-grid-columns: 25% 75%;
       grid-template-columns: 25% 75%;
-  -ms-grid-rows: 2fr 7fr 1fr;
-      grid-template-rows: 2fr 7fr 1fr;
+  -ms-grid-rows: 1.5fr 3.5fr 0.75fr;
+      grid-template-rows: 1.5fr 3.5fr 0.75fr;
+      grid-template-areas: "logo header" "logo txt" "logo break-line";
   color: #ffffff;
 }
 
 .first-container .era-logo {
   height: 300px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-column: 1;
+  grid-area: logo;
 }
 
 .first-container .home-header {
   font-family: "IM Fell English";
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  grid-area: header;
   font-size: 50px;
-  -ms-flex-item-align: top;
-      -ms-grid-row-align: top;
-      align-self: top;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 .first-container .home-paragraph {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  -ms-grid-column: 2;
+  grid-area: txt;
   font-size: 20px;
-  -ms-flex-item-align: top;
-      -ms-grid-row-align: top;
-      align-self: top;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 .first-container .break-one {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
   -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  -ms-grid-column: 2;
+  grid-area: break-line;
   width: 60%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: top;
-      -ms-grid-row-align: top;
-      align-self: top;
   border: 2.5px solid white;
   border-radius: 5px;
 }
 
 /* MAIN - SECOND CONTAINER*/
 .second-container {
+  margin-top: 85px;
   display: -ms-grid;
   display: grid;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   -ms-grid-columns: 65% 35%;
       grid-template-columns: 65% 35%;
   -ms-grid-rows: 100%;
@@ -587,8 +619,8 @@ header {
   .first-container {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 1.25fr 0.05fr 0fr 3fr;
-        grid-template-rows: 1.25fr 0.05fr 0fr 3fr;
+    -ms-grid-rows: 1.25fr 0.05fr 0fr 4fr;
+        grid-template-rows: 1.25fr 0.05fr 0fr 4fr;
         grid-template-areas: "header" "break" "nodisplay" "logo";
   }
   .first-container .home-header {
@@ -621,7 +653,7 @@ header {
     font-size: 0px;
   }
   .first-container .era-logo {
-    height: 300px;
+    height: 225px;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: logo;
