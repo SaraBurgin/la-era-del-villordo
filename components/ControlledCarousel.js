@@ -12,7 +12,7 @@ export default function ControlledCarousel() {
     <div className="carousel-container">
         <Carousel className="carousel-first" activeIndex={index} onSelect={handleSelect}>
 
-          <Carousel.Item>
+          <Carousel.Item >
             <img
               className="d-block w-100 img-swimmingpool"
               src="/images/la-era-piscina.jpg"

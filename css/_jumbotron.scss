@@ -73,7 +73,7 @@
 }
 }
 
-/* RESPONSIVENESS */
+/* MEDIA QUERIES JUMBO*/
 
 @media (max-width: 990px) {
   .jumbo {
@@ -119,6 +119,12 @@
     .pool-bg-img {
       width: 600px;
     }
+    .coral-left {
+      height: 450px;
+    }
+    .coral-right {
+      height: 450px;
+    }
   }
 }
 
@@ -129,7 +135,7 @@
     }
     .container-txt {
       .la-era-txt {
-        font-size: 75px;
+        font-size: 55px;
 
       }
     }
@@ -146,7 +152,7 @@
 @media (max-width: 510px) {
   .jumbo {
     .coral-left {
-      height: 350px;
+      height: 300px;
     }
     .container-txt {
       .la-era-txt {
@@ -155,8 +161,11 @@
     }
     .pool-bg-img {
       object-fit: cover;
-      width: 400px;
-      height: 250px;
+      width: 350px;
+      height: 300px;
+    }
+    .coral-right {
+      height: 300px;
     }
   }
 }

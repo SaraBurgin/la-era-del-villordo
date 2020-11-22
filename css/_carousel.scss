@@ -20,7 +20,7 @@
 }
 
 
-/* MQ CAROUSEL*/
+/* MEDIA QUERIES CAROUSEL*/
 @media (max-width: 990px) {
   .carousel-first {
     width: 400px;
@@ -29,9 +29,14 @@
 }
 
 @media (max-width: 550px) {
+  .carousel-container {
+    height: 350px;
   .carousel-first {
-    object-fit: cover;
-    width: 350px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
+    img {
+      height: 290px;
+    }
+}
 }
 }
