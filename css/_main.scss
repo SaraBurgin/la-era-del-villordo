@@ -1,9 +1,10 @@
 /* MAIN - FIRST CONTAINER*/
 .first-container {
   padding: 20px;
+  margin-bottom: 25px;
   display: grid;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   grid-template-columns: 25% 75%;
   grid-template-rows: 1.5fr 3.5fr 0.75fr;
   grid-template-areas:
@@ -15,30 +16,26 @@
   .era-logo {
     height: 300px;
     grid-area: logo;
-    // justify-self: left;
-    // align-self: center;
+
   }
 
   .home-header {
     font-family: $titleFont;
     grid-area: header;
     font-size: 50px;
-    // align-self: top;
-    // justify-self: center;
+
   }
 
   .home-paragraph {
     grid-area: txt;
     font-size: 20px;
-    // align-self: top;
-    // justify-self: center;
+
   }
 
   .break-one {
     grid-area: break-line;
     width: 60%;
-    // justify-self: center;
-    // align-self: top;
+
     border: 2.5px solid white;
     border-radius: 5px;
   }
@@ -47,10 +44,9 @@
 
 /* MAIN - SECOND CONTAINER*/
 .second-container {
-  margin-top: 85px;
   display: grid;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   grid-template-columns: 65% 35%;
   grid-template-rows: 100%;
 
@@ -68,11 +64,7 @@
         background-image: url('/images/background-design.png');
         width: 100%;
         height: 100%;
-        text-align: center;
-        align-self: center;
-        // padding: 20%;
         font-size: 55px;
-
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
         grid-template-areas: "title1"
@@ -82,10 +74,14 @@
           font-family: $titleFont;
           font-size: 95%;
           color: #ffffff;
+          grid-area: title1;
+          align-self: center;
         }
         .swimming-pool-info-btn {
           font-size: 30%;
           color: #ffffff;
+          grid-area: title2;
+          align-self: center;
           border: 2px solid #ffffff;
         }
       }
@@ -131,9 +127,64 @@
 
 
 /* MQ - FIRST CONTAINER */
+@media(max-width: 1305px) {
+  .first-container {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1.5fr 3.5fr 0.75fr;
+    grid-template-areas: "logo header""logo txt""logo break-line";
+
+    .home-header {
+      grid-area: header;
+    }
+    .break-one {
+      grid-area: break-line;
+    }
+    .home-paragraph {
+      grid-area: txt;
+    }
+    .era-logo {
+      grid-area: logo;
+      justify-self: center;
+      height: 250px;
+    }
+  } 
+}
+@media(max-width: 1005px) {
+  .first-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 1fr 4fr 0.5fr;
+    grid-template-areas: "logo" "header" "txt" "break-line";
+    text-justify: center;
+
+    .home-header {
+      grid-area: header;
+      justify-self: center;
+      font-size: 40px;
+      text-align: center;
+      align-self: center;
+    }
+    .break-one {
+      grid-area: break-line;
+      justify-self: center;
+    
+    }
+    .home-paragraph {
+      grid-area: txt;
+      justify-self: center;
+      font-size: 17px;
+      text-align: center;
+    }
+    .era-logo {
+      grid-area: logo;
+      height: 250px;
+      align-self: top;
+      margin-bottom: 15px;
+    }
+  } 
+}
+
 @media(max-width: 550px) {
   .first-container {
-    // padding: 10px;
     grid-template-columns: 100%;
     grid-template-rows: 1.25fr 0.05fr 0fr 4fr;
     grid-template-areas: "header" "break" "nodisplay" "logo";

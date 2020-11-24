@@ -454,10 +454,11 @@ header {
 /* MAIN - FIRST CONTAINER*/
 .first-container {
   padding: 20px;
+  margin-bottom: 25px;
   display: -ms-grid;
   display: grid;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   -ms-grid-columns: 25% 75%;
       grid-template-columns: 25% 75%;
   -ms-grid-rows: 1.5fr 3.5fr 0.75fr;
@@ -500,11 +501,10 @@ header {
 
 /* MAIN - SECOND CONTAINER*/
 .second-container {
-  margin-top: 85px;
   display: -ms-grid;
   display: grid;
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   -ms-grid-columns: 65% 35%;
       grid-template-columns: 65% 35%;
   -ms-grid-rows: 100%;
@@ -529,10 +529,6 @@ header {
   background-image: url("/images/background-design.png");
   width: 100%;
   height: 100%;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   font-size: 55px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -545,11 +541,23 @@ header {
   font-family: "IM Fell English";
   font-size: 95%;
   color: #ffffff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .second-container .blue-bg .swimming-pool-info-btn {
   font-size: 30%;
   color: #ffffff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: title2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border: 2px solid #ffffff;
 }
 
@@ -615,6 +623,89 @@ header {
 }
 
 /* MQ - FIRST CONTAINER */
+@media (max-width: 1305px) {
+  .first-container {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    -ms-grid-rows: 1.5fr 3.5fr 0.75fr;
+        grid-template-rows: 1.5fr 3.5fr 0.75fr;
+        grid-template-areas: "logo header" "logo txt" "logo break-line";
+  }
+  .first-container .home-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: header;
+  }
+  .first-container .break-one {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: break-line;
+  }
+  .first-container .home-paragraph {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: txt;
+  }
+  .first-container .era-logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .first-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 3fr 1fr 4fr 0.5fr;
+        grid-template-rows: 3fr 1fr 4fr 0.5fr;
+        grid-template-areas: "logo" "header" "txt" "break-line";
+    text-justify: center;
+  }
+  .first-container .home-header {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: header;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 40px;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .first-container .break-one {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: break-line;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .first-container .home-paragraph {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: txt;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 17px;
+    text-align: center;
+  }
+  .first-container .era-logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    height: 250px;
+    -ms-flex-item-align: top;
+        -ms-grid-row-align: top;
+        align-self: top;
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 550px) {
   .first-container {
     -ms-grid-columns: 100%;
