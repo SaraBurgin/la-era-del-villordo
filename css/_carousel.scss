@@ -23,8 +23,23 @@
 /* MEDIA QUERIES CAROUSEL*/
 @media (max-width: 990px) {
   .carousel-first {
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 350px;
+    img {
+      height: 340px;
+    }
+}
+}
+@media (max-width: 750px) {
+  .carousel-container {
+    height: 350px;
+  .carousel-first {
+    width: 475px;
+    height: 300px;
+    img {
+      height: 290px;
+    }
+}
 }
 }
 
@@ -32,7 +47,7 @@
   .carousel-container {
     height: 350px;
   .carousel-first {
-    width: 300px;
+    width: 350px;
     height: 300px;
     img {
       height: 290px;

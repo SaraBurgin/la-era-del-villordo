@@ -4,9 +4,7 @@
   margin-bottom: 25px;
   display: grid;
   width: 100vw;
-  height: 60vh;
   grid-template-columns: 25% 75%;
-  grid-template-rows: 1.5fr 3.5fr 0.75fr;
   grid-template-areas:
   "logo header"
   "logo txt"
@@ -46,10 +44,7 @@
 .second-container {
   display: grid;
   width: 100vw;
-  height: 60vh;
   grid-template-columns: 65% 35%;
-  grid-template-rows: 100%;
-
   grid-template-areas: "main side";
 
     .img-la-era-pool {
@@ -62,75 +57,66 @@
     .blue-bg {
         grid-area: side;
         background-image: url('/images/background-design.png');
-        width: 100%;
-        height: 100%;
+        text-align: center;
         font-size: 55px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: "title1"
-        "title2";
+        padding: 20px;
 
         .swimming-pool-header {
           font-family: $titleFont;
           font-size: 95%;
           color: #ffffff;
-          grid-area: title1;
-          align-self: center;
         }
-        .swimming-pool-info-btn {
+        Button {
           font-size: 30%;
           color: #ffffff;
-          grid-area: title2;
-          align-self: center;
           border: 2px solid #ffffff;
         }
       }
   }
 
   /* MAIN - THIRD CONTAINER*/
-  .third-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 450px;
+//   .third-container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     height: 450px;
 
-  .relaxation-text {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    align-self: end;
-    justify-self: center;
-    color: #ffffff;
-    font-size: 65px;
-    font-family: $titleFont;
-  }
-  .relaxation-info-btn {
-    grid-column: 1 / 2;
-    grid-row: 2 / 2;
-    height: 45px;
-    justify-self: center;
-    align-self: top;
-    width: 130px;
-    font-size: 18px;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-  }
+//   .relaxation-text {
+//     grid-column: 1 / 2;
+//     grid-row: 1 / 2;
+//     align-self: end;
+//     justify-self: center;
+//     color: #ffffff;
+//     font-size: 65px;
+//     font-family: $titleFont;
+//   }
+//   .relaxation-info-btn {
+//     grid-column: 1 / 2;
+//     grid-row: 2 / 2;
+//     height: 45px;
+//     justify-self: center;
+//     align-self: top;
+//     width: 130px;
+//     font-size: 18px;
+//     color: #ffffff;
+//     border: 2px solid #ffffff;
+//   }
 
-  .bbq-img {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    height: 450px;
-    width: 50vw;
-    object-fit: cover;
-    object-position: 60% 25;
-  }
-}
+//   .bbq-img {
+//     grid-column: 2 / 3;
+//     grid-row: 1 / 3;
+//     height: 450px;
+//     width: 50vw;
+//     object-fit: cover;
+//     // object-position: 60% 25;
+//   }
+// }
 
 
 /* MQ - FIRST CONTAINER */
 @media(max-width: 1305px) {
   .first-container {
     grid-template-columns: 40% 60%;
-    grid-template-rows: 1.5fr 3.5fr 0.75fr;
     grid-template-areas: "logo header""logo txt""logo break-line";
 
     .home-header {
@@ -152,7 +138,6 @@
 @media(max-width: 1005px) {
   .first-container {
     grid-template-columns: 100%;
-    grid-template-rows: 3fr 1fr 4fr 0.5fr;
     grid-template-areas: "logo" "header" "txt" "break-line";
     text-justify: center;
 
@@ -176,7 +161,7 @@
     }
     .era-logo {
       grid-area: logo;
-      height: 250px;
+      height: 210px;
       align-self: top;
       margin-bottom: 15px;
     }
@@ -186,8 +171,8 @@
 @media(max-width: 550px) {
   .first-container {
     grid-template-columns: 100%;
-    grid-template-rows: 1.25fr 0.05fr 0fr 4fr;
     grid-template-areas: "header" "break" "nodisplay" "logo";
+    margin-bottom: 10px;
 
     .home-header {
       font-size: 35px;
@@ -210,6 +195,7 @@
       height: 225px;
       grid-area: logo;
       justify-self: center;
+      align-self: bottom;
     }
   } 
 }
@@ -217,34 +203,33 @@
 /* MQ SECOND CONTAINER*/
 @media(max-width: 990px) {
   .second-container {
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 45vh;
-    grid-template-areas: "title1" "title2";
-
+    width: 100vw;
+    height: 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "pool-img bg-blue-txt";
+    
+    .img-la-era-pool {
+      grid-area: pool-img;
+    }
+    
     .blue-bg {
+      grid-area: bg-blue-txt;
       .swimming-pool-header {
-        font-size: 70%;
+        font-size: 75%;
         padding: 20px;
-        grid-area: title1;
-        align-self: bottom;
       }
       .swimming-pool-info-btn {
-        font-size: 30%;
-        align-self: top;
-        grid-area: title2;
         border: 1px solid #ffffff;
       }
     }
   }
   }
 
-  @media(max-width: 550px) {
+  @media(max-width: 650px) {
     .second-container {
       width: 100vw;
-      height: 35vh;
-      grid-template-columns: 100%;
-      grid-template-rows: 7fr 3fr;
-      grid-template-areas: "pool-img" "bg-blue-txt";
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "pool-img bg-blue-txt";
       
       .img-la-era-pool {
         grid-area: pool-img;
@@ -253,13 +238,10 @@
       .blue-bg {
         grid-area: bg-blue-txt;
         .swimming-pool-header {
-          font-size: 50%;
-          padding: 20px;
-          // align-self: bottom;
+          font-size: 45%;
+          padding: 10px;
         }
         .swimming-pool-info-btn {
-          // font-size: 20%;
-          // align-self: top;
           border: 1px solid #ffffff;
         }
       }
@@ -267,19 +249,36 @@
     }
 
 /* MQ THIRD CONTAINER */
-@media(max-width:990px) {
-.third-container {
-  grid-template-columns: 5fr 5fr;
-  grid-template-rows: 35vh;
+// @media(max-width:990px) {
+// .third-container {
+//   grid-template-columns: 5fr 5fr;
+//   grid-template-rows: 350px;
 
-  .relaxation-text {
-    font-size: 20px;
-  }
-  .relaxation-info-btn {
-    font-size: 100%;
-  }
-  .bbq-img {
-    height: 250px;
-  }
-}
-}
+//   .relaxation-text {
+//     font-size: 20px;
+//   }
+//   .relaxation-info-btn {
+//     font-size: 100%;
+//   }
+//   .bbq-img {
+//     height: 100px;
+//   }
+// }
+// }
+
+// @media(max-width:550px) {
+//   .third-container {
+//     grid-template-columns: 5fr 5fr;
+//     grid-template-rows: 350px;
+  
+//     .relaxation-text {
+//       font-size: 20px;
+//     }
+//     .relaxation-info-btn {
+//       font-size: 100%;
+//     }
+//     .bbq-img {
+//       height: 250px;
+//     }
+//   }
+//   }
