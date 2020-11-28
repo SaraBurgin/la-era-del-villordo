@@ -501,6 +501,7 @@ header {
   display: -ms-grid;
   display: grid;
   width: 100vw;
+  height: 60vh;
   -ms-grid-columns: 65% 35%;
       grid-template-columns: 65% 35%;
       grid-template-areas: "main side";
@@ -522,7 +523,10 @@ header {
   grid-area: side;
   background-image: url("/images/background-design.png");
   text-align: center;
-  font-size: 55px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 65px;
   padding: 20px;
 }
 
@@ -539,6 +543,50 @@ header {
 }
 
 /* MAIN - THIRD CONTAINER*/
+.third-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 60vh;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "text image";
+}
+
+.third-container .txt-btn-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.third-container .txt-btn-container .relaxation-text {
+  color: #ffffff;
+  font-size: 65px;
+  font-family: "IM Fell English";
+}
+
+.third-container .txt-btn-container .relaxation-info-btn {
+  height: 45px;
+  width: 130px;
+  font-size: 18px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.third-container .bbq-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: image;
+  height: 450px;
+  width: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* MQ - FIRST CONTAINER */
 @media (max-width: 1305px) {
   .first-container {
@@ -714,7 +762,7 @@ header {
     grid-area: bg-blue-txt;
   }
   .second-container .blue-bg .swimming-pool-header {
-    font-size: 45%;
+    font-size: 35%;
     padding: 10px;
   }
   .second-container .blue-bg .swimming-pool-info-btn {

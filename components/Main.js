@@ -16,13 +16,13 @@ const Main = () => (
               <Button className="swimming-pool-info-btn"variant="outline-primary">INFO</Button>
           </div>
       </div>
-    <br />
-    <br />
-      {/* <div className="third-container">
-        <p className="relaxation-text">THE RELAXATION.</p>
+      <div className="third-container">
+        <div className="txt-btn-container">
+          <p className="relaxation-text">THE RELAXATION.</p>
+          <Button className="relaxation-info-btn" variant="outline-primary">INFO</Button>
+        </div>
         <img src="/images/barbacoa.jpg" className="bbq-img" alt="barbaque image"/>
-        <Button className="relaxation-info-btn" variant="outline-primary">INFO</Button>
-      </div> */}
+      </div>
     </>
   );
 

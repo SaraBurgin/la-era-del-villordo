@@ -44,6 +44,7 @@
 .second-container {
   display: grid;
   width: 100vw;
+  height: 60vh;
   grid-template-columns: 65% 35%;
   grid-template-areas: "main side";
 
@@ -58,7 +59,8 @@
         grid-area: side;
         background-image: url('/images/background-design.png');
         text-align: center;
-        font-size: 55px;
+        align-self: center;
+        font-size: 65px;
         padding: 20px;
 
         .swimming-pool-header {
@@ -75,42 +77,41 @@
   }
 
   /* MAIN - THIRD CONTAINER*/
-//   .third-container {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-template-rows: 1fr 1fr;
-//     height: 450px;
+  .third-container {
+    display: grid;
+    width: 100vw;
+    height: 60vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "text image";
 
-//   .relaxation-text {
-//     grid-column: 1 / 2;
-//     grid-row: 1 / 2;
-//     align-self: end;
-//     justify-self: center;
-//     color: #ffffff;
-//     font-size: 65px;
-//     font-family: $titleFont;
-//   }
-//   .relaxation-info-btn {
-//     grid-column: 1 / 2;
-//     grid-row: 2 / 2;
-//     height: 45px;
-//     justify-self: center;
-//     align-self: top;
-//     width: 130px;
-//     font-size: 18px;
-//     color: #ffffff;
-//     border: 2px solid #ffffff;
-//   }
+    .txt-btn-container {
+      grid-area: text;
+      align-self: center;
+      text-align: center;
 
-//   .bbq-img {
-//     grid-column: 2 / 3;
-//     grid-row: 1 / 3;
-//     height: 450px;
-//     width: 50vw;
-//     object-fit: cover;
-//     // object-position: 60% 25;
-//   }
-// }
+      .relaxation-text {
+        color: #ffffff;
+        font-size: 65px;
+        font-family: $titleFont;
+      }
+      .relaxation-info-btn {
+        height: 45px;
+        width: 130px;
+        font-size: 18px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+      }
+    }
+
+  
+  
+  .bbq-img {
+    grid-area: image;
+    height: 450px;
+    width: 50vw;
+    object-fit: cover;
+  }
+}
 
 
 /* MQ - FIRST CONTAINER */
@@ -238,7 +239,7 @@
       .blue-bg {
         grid-area: bg-blue-txt;
         .swimming-pool-header {
-          font-size: 45%;
+          font-size: 35%;
           padding: 10px;
         }
         .swimming-pool-info-btn {
